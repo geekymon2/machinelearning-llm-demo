@@ -17,12 +17,12 @@ This can be used to view/run the Jupyter notebooks. Alternatively its also avail
 - Create project folder e.g. machinelearning-llm-demo
 - Create a virtual environmment.
   ```
-  python -m venv mlenv
+  python -m venv .mlenv
   ```
 - Active the environment
   ```
-  chmod +x ./mlenv/bin/activate
-  ./mlenv/bin/activate
+  chmod +x ./.mlenv/bin/activate
+  ./.mlenv/bin/activate
   ```
 - Install dependencues
   ```
@@ -36,4 +36,8 @@ This can be used to view/run the Jupyter notebooks. Alternatively its also avail
 - Start jupyter notebook
   ```
   jupyter notebook
+  ```
+- Setup jupyter kernel
+  ```
+  python -m ipykernel install --user --name .mlenv --display-name "machinelearning-llm-env"
   ```
